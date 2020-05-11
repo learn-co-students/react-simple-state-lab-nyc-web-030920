@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Cell from './Cell.js';
 
 export default class Matrix extends Component {
   
@@ -23,4 +24,8 @@ export default class Matrix extends Component {
 
 Matrix.defaultProps = {
   // the rest of the whole thing
+  values: ( () => {
+    const rowColors = ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00']
+    return (new Array.fill(rowColors))
+  })
 }
