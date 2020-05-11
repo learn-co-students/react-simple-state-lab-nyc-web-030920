@@ -8,9 +8,9 @@ constructor(props) {
   }
 
   handleClick = () => {
-    this.setState({
-      color: '#333'
-    })
+    this.setState(
+        { color: '#333'}
+        )
   }
 
 
